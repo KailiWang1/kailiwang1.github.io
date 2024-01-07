@@ -19,15 +19,18 @@
         width: 100%;
         height: auto; /* 保持图片比例 */
     }
-    .info-column h2:first-child {
+    .info-column {
         flex: 1; /* 允许个人信息列伸缩填满剩余空间 */
         display: flex;
-        margin-top: 0;
         line-height: 0.2;
         flex-direction: column;
         justify-content: space-around; /* 在列中均匀分配空间 */
         padding: 10px;
         font-size: 12px;
+    }
+    .info-column h2:first-child {
+        margin-top: 0;
+        line-height: 0.2;
     }
     .publications {
         padding: 20px;
