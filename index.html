@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Wang's Homepage!</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-    }
     .profile-container {
         display: flex;
+        align-items: stretch; /* 使得子元素填满容器的高度 */
     }
     .photo-column {
-        flex: 1;
+        flex: 0 0 auto; /* 不允许照片列伸缩，宽度由内容决定 */
         padding: 20px;
+        /* 调整照片大小 */
+        max-width: 150px; /* 或者您希望的尺寸 */
+        max-height: 150px; /* 或者您希望的尺寸 */
+    }
+    .photo-column img {
+        width: 100%;
+        height: auto; /* 保持图片比例 */
     }
     .info-column {
-        flex: 1;
+        flex: 1; /* 允许个人信息列伸缩填满剩余空间 */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* 在列中均匀分配空间 */
         padding: 20px;
-    }
-    header h1, .info-column h2 {
-        color: #333;
     }
     .publications {
         padding: 20px;
