@@ -45,9 +45,10 @@
         line-height: 0.2;
     }
     .right-image {
-            flex: 0 0 auto; /* 不伸缩，固定尺寸 */
-            width: 10px; /* 自定义宽度 */
-            height: 10px; /* 自定义高度 */
+            flex: 1; /* 使图片可以伸缩 */
+            width: auto; /* 宽度自适应 */
+            height: 100%; /* 高度与容器相同 */
+            object-fit: cover; /* 保持图片的比例 */
         }
     .publications {
         padding: 20px;
