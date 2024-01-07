@@ -11,15 +11,19 @@
     .profile-container {
         display: flex;
     }
-    .column {
-        flex: 1; /* Ensures that both columns take up equal width */
+    .photo-column {
+        flex: 1;
         padding: 20px;
-        display: flex;
-        flex-direction: column;
     }
-    .photo-column, .info-column {
-        background: #f8f8f8; /* Just for visibility */
-        border: 1px solid #eaeaea; /* Just for visibility */
+    .photo-column img {
+        width: 100%; /* Adjust as needed */
+    }
+    .info-column {
+        flex: 1;
+        padding: 20px;
+    }
+    header h1, .info-column h2 {
+        color: #333;
     }
     .publications {
         padding: 20px;
