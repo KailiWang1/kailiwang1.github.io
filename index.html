@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Wang's Homepage!</title>
-    <!-- Add additional head elements like stylesheets here -->
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .profile-container {
+        display: flex;
+        margin-top: 20px;
+    }
+    .photo-column {
+        flex: 1;
+        padding: 20px;
+    }
+    .photo-column img {
+        width: 100%; /* Adjust as needed */
+    }
+    .info-column {
+        flex: 3;
+        padding: 20px;
+    }
+    header h1, .info-column h2 {
+        color: #333;
+    }
+    .publications {
+        padding: 20px;
+    }
+    .publications ul {
+        list-style-type: none;
+    }
+    .publications li {
+        margin-bottom: 10px;
+    }
+    /* Further styles for other elements */
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Kaili Wang's Homepage!</h1>
     </header>
+    <div class="profile-container">
+        <div class="photo-column">
+            <img src="photos/my_photo.jpg" alt="Kaili Wang">
+        </div>
+        <div class="info-column">
+            <h2>Kaili Wang</h2>
+            <p>School of Computer Science and Technology</p>
+            <p>Academic Building 1, Room 302</p>
+            <p>Donghua University</p>
+            <p>2999 North Renmin Road</p>
+            <p>Songjiang, Shanghai 201620, China</p>
+            <p>Email: kailiwang@dhu.edu.cn</p>
+            <p>ORCID: kailiwang@dhu.edu.cn</p>
+            <p>ResearchGate: kailiwang@dhu.edu.cn</p>
+        </div>
+    </div>
     <section>
         <img src="photos/my_photo.jpg" alt="Kaili Wang">
         <h2>Kaili Wang</h2>
