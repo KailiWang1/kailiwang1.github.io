@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wang's Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+        }
+        .left-side {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .right-side {
+            flex: 2;
+            padding: 20px;
+            overflow-y: auto;
+            height: 100px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="photos/photo.jpg" alt="Kaili Wang">
+            <h3>您的名字</h3>
+            <p>地址: 您的地址</p>
+            <p>联系方式: 您的邮箱或电话</p>
+        </div>
+        <div class="right-side">
+            <h2>个人简介</h2>
+            <p>这里是您的个人简介...</p>
+            <!-- 添加更多个人简介内容 -->
+        </div>
+    </div>
+</body>
+</html>
