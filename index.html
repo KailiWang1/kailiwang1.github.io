@@ -12,19 +12,15 @@
         display: flex;
         margin-top: 20px;
     }
-    .photo-column {
-        flex: 1;
+    .column {
+        flex: 1; /* Ensures that both columns take up equal width */
         padding: 20px;
+        display: flex;
+        flex-direction: column;
     }
-    .photo-column img {
-        width: 100%; /* Adjust as needed */
-    }
-    .info-column {
-        flex: 3;
-        padding: 20px;
-    }
-    header h1, .info-column h2 {
-        color: #333;
+    .photo-column, .info-column {
+        background: #f8f8f8; /* Just for visibility */
+        border: 1px solid #eaeaea; /* Just for visibility */
     }
     .publications {
         padding: 20px;
