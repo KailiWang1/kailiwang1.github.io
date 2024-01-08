@@ -103,10 +103,12 @@
          <h3>Drug-Target Interaction Prediction</h3>
          <p style="text-align: justify;">Drug-target interaction (DTI) prediction is a significant aspect of the drug discovery process. It involves understanding and predicting how drugs interact with the given targets, typically proteins. 
              The prediction plays a vital role in drug development in various areas, such as virtual screening, drug repurposing and identification of potential drug side effects. Appropriate and effective protein
-             feature representations are of vital importance for developing computational approaches, especially data-driven methods, for predicting drug-target interaction. Here, We developed a novel deep learning approach, 
-             named DeepDTAF, to predict the protein–ligand interaction. DeepDTAF was constructed by integrating local and global contextual features. More specifically, the protein-binding pocket, which possesses some 
-             special properties for directly binding the ligand, was firstly used as the local input feature for protein–ligand binding affinity prediction. Furthermore, multiscale long-range interactions can be captured by
-             the designed dilated convolution. </p>
+             feature representations are of vital importance for developing computational approaches, especially data-driven methods, for predicting drug-target interaction. At present, many deep learning-based models
+             are proposed to predict the protein–ligand binding affinity and achieve significant performance improvement. However, protein–ligand binding affinity prediction still has fundamental challenges. One 
+             challenge is that the mutual information between proteins and ligands is hard to capture. Another challenge is how to find and highlight the important atoms of the ligands and residues of the proteins.
+             To solve these limitations, we develop a novel graph neural network strategy with the Vina distance optimization terms (<a href="https://doi.org/10.1093/bioinformatics/btad340">GraphscoreDTA</a>) 
+             for predicting protein–ligand binding affinity, which takes the combination of graph neural network, bitransport information mechanism and physics-based distance terms into account for the first time. 
+             Unlike other methods, GraphscoreDTA can not only effectively capture the protein–ligand pairs’ mutual information but also highlight the important atoms of the ligands and residues of the proteins. </p>
     </section>
 </body>
 </html>   
